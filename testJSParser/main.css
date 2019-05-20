@@ -1,0 +1,110 @@
+.contenair{
+
+  align-items: center;
+}
+
+#main{
+  align-items:center;
+  padding: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.texttoTranslate{
+  font-size: 40px;
+}
+
+.centre{
+  text-align: center;
+}
+
+.button{
+  text-align: center;
+  font-size: 20px;
+margin: auto;
+padding: 0 40% 0 40%;
+}
+
+#txtouput{
+  margin-top: 20px;
+  margin-bottom: 40px;
+width: 80%;
+}
+
+
+
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.consigne{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.arrow{
+  font-size: 30px;
+}
+
+#showResult{
+  align-items:center;
+  padding: auto;
+  border: 2px dashed black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.tutoMain{
+  margin-bottom: 30px;
+}
+
+#tuto{
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #d6e5ff;
+}
+
+#divFile{
+  margin-bottom: 10px;
+}
+
+.buttonFleche{
+  background-color: white;
+  color: black;
+  font-weight: 500;
+font-size: 10em;
+border: none;
+}
+
+.buttonFleche:hover{
+  color:#7ed879;
+}
+
+#inputText{
+  margin-top: 20px;
+  margin: auto;
+width: 80%;
+}
+
+.zoneInput{
+ display: flex; /* contexte sur le parent */
+white-space: nowrap;
+}
+
+#traduisBt{
+padding: 0 30% 0 30%;
+}

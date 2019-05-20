@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!-- tellraw @a ["",{"text":"hello world ","color":"dark_red"},{"text":"is world","color":"dark_green"},{"text":"\n"},{"text":"this is a test","color":"dark_blue"},{"text":"\ngg"}]
+-->
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Traducteur cr3art</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<body>
+
+  <div class="centre">
+    <h1>Test de parse </h1>
+
+
+    <div class="tutoMain cliqueHide">
+      <div class="tutoMainHide"style="margin: auto ;width: 90%; height: 20px; border-bottom: 1px solid black; text-align: center">
+
+        <span style="font-size: 20px; background-color: #FFF; padding: 0 10px;">
+          &darr;  Click to show the tutorial  &darr;
+        </span>
+
+      </div>
+
+      <div class="tuto hide" id="tuto">
+        <ul>
+        <li>1 - select your file </li>
+        <li>2 - Navigate usign arrow </li>
+        <li>3 - Write in the input zone the translation of the text  </li>
+        <li>4 - paste the tellraw translte in the new translate file </li>
+        <li>if you have any problme contact xam74er1 </li>
+        </ul>
+
+
+      </div>
+
+    </div>
+
+<div class="centre" id="divFile">
+  <input type="file" name="" value="" id="inputFile" class="button">
+</div>
+<h2>Or</h2>
+<div class="centre">
+  <p>write your text </p>
+
+<div class="zoneInput">
+
+
+  <button type="button" name="button" class="buttonFleche" id="btPrev" onclick="prev()">&larr; </button>
+
+    <textarea name="name" rows="8" cols="80" id="inputText" placeholder="inser your text here" >
+    </textarea>
+
+  <button type="button" name="button" class="buttonFleche" id="btNext" onclick="next()">&rarr; </button>
+</div>
+    <button type="button" name="start" onclick="start()" value="start" title="start" class="button">start</button>
+    <p class="consigne">If you have a black page look down </p>
+    <p class="consigne arrow">&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;</p>
+    </div>
+  </div>
+
+
+  <div class="contenair">
+
+
+
+
+    <div id="main">
+
+    </div>
+
+    <div class="centre">
+      <button type="button" name="traduire" onclick="traduire()" value="traduis" title="traduis" class="button" id="traduisBt">Validate translate</button>
+      <input type="checkbox" name="liveTranslta" value="" id="liveTranslta" checked>
+      <label for="liveTranslta">Show the translate text in live when you change </label>
+    </div>
+
+
+    <div class="centre">
+
+      <textarea name="name" rows="3" cols="80" id="txtouput"></textarea>
+    </div>
+
+    <div class="centre">
+
+      <p class="consigne">Resulta :</p>
+
+    </div>
+    <div class="" id="showResult">
+
+    </div>
+    <!--<input type="text" name="" value="" placeholder="sortie du texte" id="txtouput"> -->
+  </div>
+
+<footer>
+  <div class="centre">
+    Made by xam74er1
+  </div>
+</footer>
+
+
+
+  <script src="jquery-3.1.1.js"></script>
+  <script src="jquery-migrate-3.0.0.min.js">	</script>
+  <script src="jquery.cookie.js"></script>
+
+  <script src="jquery-ui.js"></script>
+  <script src="traducteur.js">
+  </script>
+</body>
+</html>
