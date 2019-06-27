@@ -11,7 +11,9 @@
 <link rel="stylesheet" href="main.css">
 <body>
 
+<div class="notranslate">
   <div class="centre">
+      <div id="google_translate_element"></div>
     <h1>Test de parse </h1>
 
 
@@ -67,20 +69,28 @@
 
 
 
-    <div id="main">
+    <div id="main" class="translate">
 
     </div>
 
     <div class="centre">
-      <button type="button" name="traduire" onclick="traduire()" value="traduis" title="traduis" class="button" id="traduisBt">Validate translate</button>
+      <button type="button" name="traduire" onclick="fuck_lopstruction()" value="traduis" title="traduis" class="button" id=":2.confirm">Validate translate</button>
+      <br>
       <input type="checkbox" name="liveTranslta" value="" id="liveTranslta" checked>
       <label for="liveTranslta">Show the translate text in live when you change </label>
+
+      <input type="checkbox" name="autoCopy" value="" id="autoCopy" checked>
+      <label for="autoCopy">Automtic copy in cliborad </label>
+
+      <input type="checkbox" name="autoGGtrad" value="" id="autoGGtrad" checked>
+      <label for="autoGGtrad">Automatic translation  </label>
+
     </div>
 
 
     <div class="centre">
 
-      <textarea name="name" rows="3" cols="80" id="txtouput"></textarea>
+      <textarea name="name" rows="3" cols="80" id="txtouput" readonly></textarea>
     </div>
 
     <div class="centre">
@@ -99,9 +109,22 @@
     Made by xam74er1
   </div>
 </footer>
+  </div>
 
+  <div class="translate" style="display:none">
+    hello world
+  </div>
 
+<script type="text/javascript" src="www.translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+traduire(true);
 
+}
+</script>
+
+<script src="ggapi.js">  </script>
   <script src="jquery-3.1.1.js"></script>
   <script src="jquery-migrate-3.0.0.min.js">	</script>
   <script src="jquery.cookie.js"></script>
@@ -109,5 +132,12 @@
   <script src="jquery-ui.js"></script>
   <script src="traducteur.js">
   </script>
+
+
+
+
+
+
+
 </body>
 </html>
