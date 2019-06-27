@@ -17,3 +17,4 @@ this application can be use in your favorit navigator
 
 * Keep the color and the idendation of the text 
 * Save the moment when you quit 
+* Use google translate to automatics translate text 
