@@ -20,7 +20,7 @@ function trad2(text){
 }
 
 function trad(text){
-  var YOUR_API_KEY="AIzaSyDdPX486-Kza-6uTk4U96empstfJOk1PAI";
+
 
   var urlrequest = "https://translation.googleapis.com/language/translate/v2?"+
   "q="+encodeURI(text.replace(/ /g,"+"))+
